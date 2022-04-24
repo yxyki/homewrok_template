@@ -20,11 +20,13 @@ void LineModRandom(int n,int ranNum[]){
 
 void BubleSort(int List[],int n){
   int numberOfPairs=n,i,temp;
+  int count=0;
   Bool swappedElements=true;
   while(swappedElements){
       numberOfPairs--;
       swappedElements=false;
       for(i=0;i<numberOfPairs;i++){
+          count++;
           if(List[i]>List[i+1]){
               temp=List[i];
               List[i]=List[i+1];
@@ -33,6 +35,7 @@ void BubleSort(int List[],int n){
           }
       }
   }
+  printf("\n规模为%d的数据比较次数为%d\n",n,count);
 }
 
 int main(){
