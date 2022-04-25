@@ -4,6 +4,18 @@
 
 int length,count=0;
 
+void LineModRandom(int n,int ranNum[]){
+    int i;
+    int max=2000+n;
+    srand((unsigned)(time(NULL)));
+    int m=rand()%(max+100);
+    int a=rand()%m-1;
+    int c=rand()%m-1;
+    ranNum[0]=rand()%(max+1)-1;
+    for(i=1;i<n;i++)
+      ranNum[i]=(a*ranNum[i-1]+c)%m;
+}
+
 void MergeList(int List[],int start1,int end1,int start2,int end2){
   int sorted[length];
   int index=0,i;
@@ -40,18 +52,6 @@ void MergeList(int List[],int start1,int end1,int start2,int end2){
   }
 }
 
-void LineModRandom(int n,int ranNum[]){
-    int i;
-    int max=2000;
-    srand((unsigned)(time(NULL)));
-    int m=rand()%(max+100);
-    int a=rand()%m-1;
-    int c=rand()%m-1;
-    ranNum[0]=rand()%(max+1)-1;
-    for(i=1;i<n;i++)
-      ranNum[i]=(a*ranNum[i-1]+c)%m;
-}
-
 void MergeSort(int List[],int first,int last){
   if(first<last){
       int mid=(last+first)/2;
@@ -75,5 +75,5 @@ int main(){
     printf("\n排序之后为:");
     for(i=0;i<length;i++)
       printf("%d ",x[i]);
-    printf("\n规模为%d的序列的比较次数为:%d",length,count);
+    printf("\n规模为%d的序列的比较次数为:%d\n",length,count);
 }

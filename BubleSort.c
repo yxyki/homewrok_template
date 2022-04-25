@@ -5,6 +5,7 @@
 #define true 1
 #define false 0
 typedef int Bool;
+int count=0;
 
 void LineModRandom(int n,int ranNum[]){
     int i;
@@ -18,9 +19,15 @@ void LineModRandom(int n,int ranNum[]){
       ranNum[i]=(a*ranNum[i-1]+c)%m;
 }
 
+void swap(int *a,int *b){
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
 void BubleSort(int List[],int n){
   int numberOfPairs=n,i,temp;
-  int count=0;
   Bool swappedElements=true;
   while(swappedElements){
       numberOfPairs--;
@@ -28,14 +35,11 @@ void BubleSort(int List[],int n){
       for(i=0;i<numberOfPairs;i++){
           count++;
           if(List[i]>List[i+1]){
-              temp=List[i];
-              List[i]=List[i+1];
-              List[i+1]=temp;
+              swap(&List[i],&List[i+1]);
               swappedElements=true;
           }
       }
   }
-  printf("\n规模为%d的数据比较次数为%d\n",n,count);
 }
 
 int main(){
@@ -44,10 +48,12 @@ int main(){
     scanf("%d",&n);
     int x[n];
     LineModRandom(n,x);
+    printf("生成的随机序列为:");
     for(i=0;i<n;i++)
       printf("%d ",x[i]);
     BubleSort(x,n);
-    printf("\n排序之后为:\n");
+    printf("\n排序之后为:");
     for(i=0;i<n;i++)
       printf("%d ",x[i]);
+    printf("\n规模为%d的数据比较次数为%d\n",n,count);
 }

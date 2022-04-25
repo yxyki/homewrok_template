@@ -11,7 +11,7 @@
       "stopAtEntry": false,
       "cwd": "/workspace/homewrok_template",
       "environment": [],
-      "program": "/workspace/homewrok_template/build/Debug/outDebug",
+      "program": "/workspace/homewrok_template/build/Release/outRelease",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",

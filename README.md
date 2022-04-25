@@ -2,7 +2,7 @@
 
 ## 学号：20201060335
 
-## 实验目的：
+## 实验目的
 
 通过排序算法的程序实现和执行时间测试，与理论上的结论进行对比分析，深入理解算法时间复杂度渐进性态和和增长率的概念；理解分治算法设计的基本思想、递归程序实现的基本方法，加深对分治算法设计与分析思想的理解。
 
@@ -61,14 +61,11 @@ DivideAndConquer(data,n,solution)
 gitpod /workspace/homewrok_template (main) $ gcc -o BubleSort.exe BubleSort.c
 gitpod /workspace/homewrok_template (main) $ ./BubleSort.exe
 请输入排序的元素个数:10
-1148 1303 1157 1717 941 1411 347 1051 1121 61 
+生成的随机序列为:411 174 141 277 262 289 317 190 342 145 
+排序之后为:141 145 174 190 262 277 289 317 342 411 
 规模为10的数据比较次数为45
-
-排序之后为:
-61 347 941 1051 1121 1148 1157 1303 1411 1717
-
 ```
-实验过程及实验结果（C版，MergeSorrt）
+（C版，MergeSorrt）
 ```bash
 gitpod /workspace/homewrok_template (main) $ gcc -o MergeSort.exe MergeSort.c
 gitpod /workspace/homewrok_template (main) $ ./MergeSort.exe
@@ -76,4 +73,13 @@ gitpod /workspace/homewrok_template (main) $ ./MergeSort.exe
 生成的随机序列为:1441 108 40 87 70 111 19 0 94 60 
 排序之后为:0 19 40 60 70 87 94 108 111 1441 
 规模为10的序列的比较次数为:22
+```
+（C版，QuickSort）
+```bash
+gitpod /workspace/homewrok_template (main) $ gcc -o QuickSort.exe QuickSort.c
+gitpod /workspace/homewrok_template (main) $ ./QuickSort.exe
+请输入排序的元素个数:10
+生成的随机序列为:1018 1551 1169 1132 395 693 936 194 1332 1560 
+排序之后为:194 395 693 936 1018 1132 1169 1332 1551 1560 
+规模为10的序列的比较次数为:21
 ```
