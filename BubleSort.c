@@ -10,7 +10,7 @@ void LineModRandom(int n,int ranNum[]){
     int i;
     int max=2000;
     srand((unsigned)(time(NULL)));
-    int m=rand()%(max+20);
+    int m=rand()%(max+100);
     int a=rand()%m-1;
     int c=rand()%m-1;
     ranNum[0]=rand()%(max+1)-1;
