@@ -68,3 +68,12 @@ gitpod /workspace/homewrok_template (main) $ ./BubleSort.exe
 61 347 941 1051 1121 1148 1157 1303 1411 1717
 
 ```
+实验过程及实验结果（C版，MergeSorrt）
+```bash
+gitpod /workspace/homewrok_template (main) $ gcc -o MergeSort.exe MergeSort.c
+gitpod /workspace/homewrok_template (main) $ ./MergeSort.exe
+请输入排序的元素个数:10
+生成的随机序列为:1441 108 40 87 70 111 19 0 94 60 
+排序之后为:0 19 40 60 70 87 94 108 111 1441 
+规模为10的序列的比较次数为:22
+```

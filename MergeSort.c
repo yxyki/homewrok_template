@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-int length;
+int length,count=0;
 
 void MergeList(int List[],int start1,int end1,int start2,int end2){
   int sorted[length];
@@ -12,10 +12,12 @@ void MergeList(int List[],int start1,int end1,int start2,int end2){
       if(List[start1]<List[start2]){
           sorted[index]=List[start1];
           start1++;
+          count++;
       }
       else{
           sorted[index]=List[start2];
           start2++;
+          count++;
       }
       index++;
   }
@@ -66,10 +68,12 @@ int main(){
     scanf("%d",&length);
     int x[length];
     LineModRandom(length,x);
+    printf("生成的随机序列为:");
     for(i=0;i<length;i++)
       printf("%d ",x[i]);
-    MergeSort(x,0,length);
-    printf("\n排序之后为:\n");
+    MergeSort(x,0,length-1);
+    printf("\n排序之后为:");
     for(i=0;i<length;i++)
       printf("%d ",x[i]);
+    printf("\n规模为%d的序列的比较次数为:%d",length,count);
 }
