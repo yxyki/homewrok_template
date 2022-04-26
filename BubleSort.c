@@ -5,7 +5,7 @@
 #define true 1
 #define false 0
 typedef int Bool;
-int count=0;
+long count=0;
 
 void LineModRandom(int n,int ranNum[]){
     int i;
@@ -55,5 +55,5 @@ int main(){
     printf("\n排序之后为:");
     for(i=0;i<n;i++)
       printf("%d ",x[i]);
-    printf("\n规模为%d的数据比较次数为%d\n",n,count);
+    printf("\n规模为%d的数据比较次数为%ld\n",n,count);
 }

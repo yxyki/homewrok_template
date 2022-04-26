@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<math.h>
 
 int length,count=0;
 
@@ -8,7 +9,7 @@ void LineModRandom(int n,int ranNum[]){
     int i;
     int max=2000+n;
     srand((unsigned)(time(NULL)));
-    int m=rand()%(max+100);
+    int m=rand()%max;
     int a=rand()%m-1;
     int c=rand()%m-1;
     ranNum[0]=rand()%(max+1)-1;
