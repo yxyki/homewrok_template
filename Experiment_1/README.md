@@ -47,8 +47,8 @@ DivideAndConquer(data,n,solution)
 以冒泡排序、合并排序和快速排序算法为例，以生成的随机数作为实验中使用的测试数据。对每个算法，记录程序执行中随着测试数据增加算法基本操作执行次数，分析并以图形方式展现增长率；对以上三个排序算法，对比随着测试数据增加算法增长率变化趋势；测试、验证、对比算法时间复杂度的理论结论。  
 **代码链接**：  
 [BubleSort.c](https://github.com/yxyki/homewrok_template/blob/main/Experiment_1/BubleSort.c)  
-[MergeSort.c](Experiment_1/MergeSort.c)  
-[QuickSort.c]  
+[MergeSort.c](https://github.com/yxyki/homewrok_template/blob/main/Experiment_1/MergeSort.c)  
+[QuickSort.c](https://github.com/yxyki/homewrok_template/blob/main/Experiment_1/QuickSort.c)  
 
 (1) “比较”是以上排序算法的基本操作（即决定算法执行效率的主要操作），在算法中设置比较操作的计数器，编程实现算法（输出最终的计数值）并进行测试，保证程序正确无误。  
 (2) 使用随机数生成方法生成包含 100 个随机数的测试数据，记录这些数据，并分别记录以上三个排序算法比较操作的执行次数；再重新生成包含 100 个随机数的测试数据，记录这些数据三个排序算法比较操作的执行次数。对比两次生成的测试数据和算法执行中比较操作的次数，理解算法复杂度分析时输入数据等价类的含义。  
