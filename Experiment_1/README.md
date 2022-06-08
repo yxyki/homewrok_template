@@ -91,3 +91,5 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 排序之后为:2 3 5 18 29 33 35 35 37 48 
 规模为10的序列的比较次数为:22
 ```
+由matlab软件画出该三种算法随着数据规模的增加，比较次数的曲线图如下：  
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
