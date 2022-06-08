@@ -39,9 +39,10 @@ void BubleSort(int List[],int n){
 }
 
 int main(){
-    int n,i,max,x[n];
+    int n,i,max;
     printf("请输入排序的元素个数:");
     scanf("%d",&n);
+    int x[n];
     printf("请输入元素的最大值（取值范围）:");
     scanf("%d",&max);
     LineModRandom(max,n,x);
