@@ -4,16 +4,12 @@
 
 int length,count=0;
 
-void LineModRandom(int n,int ranNum[]){
+void LineModRandom(int range,int n,int random[]){
     int i;
-    int max=2000+n;
-    srand((unsigned)(time(NULL)));
-    int m=rand()%(max+100);
-    int a=rand()%m-1;
-    int c=rand()%m-1;
-    ranNum[0]=rand()%(max+1)-1;
-    for(i=1;i<n;i++)
-      ranNum[i]=(a*ranNum[i-1]+c)%m;
+    srand((unsigned)time(NULL));
+    for(i=0;i<n;i++){
+        random[i]=rand()%range+1;
+    }
 }
 
 void MergeList(int List[],int start1,int end1,int start2,int end2){
@@ -63,11 +59,13 @@ void MergeSort(int List[],int first,int last){
 }
 
 int main(){
-    int i;
+    int i,max;
     printf("请输入排序的元素个数:");
     scanf("%d",&length);
+    printf("请输入最大元素(取值范围):");
+    scanf("%d",&max);
     int x[length];
-    LineModRandom(length,x);
+    LineModRandom(max,length,x);
     printf("生成的随机序列为:");
     for(i=0;i<length;i++)
       printf("%d ",x[i]);

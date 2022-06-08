@@ -58,28 +58,31 @@ DivideAndConquer(data,n,solution)
 
 实验过程及实验结果（C版,BubleSort）
 ```bash
-gitpod /workspace/homewrok_template (main) $ gcc -o BubleSort.exe BubleSort.c
-gitpod /workspace/homewrok_template (main) $ ./BubleSort.exe
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ gcc -o BubleSort.exe BubleSort.c
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./BubleSort.exe
 请输入排序的元素个数:10
-生成的随机序列为:411 174 141 277 262 289 317 190 342 145 
-排序之后为:141 145 174 190 262 277 289 317 342 411 
-规模为10的数据比较次数为45
+请输入元素的最大值（取值范围）:100
+生成的随机序列为:53 99 29 73 43 91 27 59 44 65 
+排序之后为:27 29 43 44 53 59 65 73 91 99 
+规模为10的数据比较次数为42
 ```
 （C版，MergeSorrt）
 ```bash
-gitpod /workspace/homewrok_template (main) $ gcc -o MergeSort.exe MergeSort.c
-gitpod /workspace/homewrok_template (main) $ ./MergeSort.exe
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ gcc -o MergeSort.exe MergeSort.c
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./MergeSort.exe
 请输入排序的元素个数:10
-生成的随机序列为:1441 108 40 87 70 111 19 0 94 60 
-排序之后为:0 19 40 60 70 87 94 108 111 1441 
-规模为10的序列的比较次数为:22
+请输入最大元素(取值范围):100
+生成的随机序列为:83 38 62 18 74 97 21 11 90 10 
+排序之后为:10 11 18 21 38 62 74 83 90 97 
+规模为10的序列的比较次数为:23
 ```
 （C版，QuickSort）
 ```bash
-gitpod /workspace/homewrok_template (main) $ gcc -o QuickSort.exe QuickSort.c
-gitpod /workspace/homewrok_template (main) $ ./QuickSort.exe
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ gcc -o QuickSort.exe QuickSort.c
+gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 请输入排序的元素个数:10
-生成的随机序列为:1018 1551 1169 1132 395 693 936 194 1332 1560 
-排序之后为:194 395 693 936 1018 1132 1169 1332 1551 1560 
-规模为10的序列的比较次数为:21
+请输入最大元素(取值范围):50
+生成的随机序列为:33 5 18 48 37 29 35 3 35 2 
+排序之后为:2 3 5 18 29 33 35 35 37 48 
+规模为10的序列的比较次数为:22
 ```
