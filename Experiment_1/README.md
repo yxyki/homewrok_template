@@ -56,11 +56,11 @@ DivideAndConquer(data,n,solution)
 (4) 在 MergeSort 和 QuickSort 算法中设置比较操作执行的全局计数器，编程实现算法（输出最终的计数值）；设置记录每次递归调用时描述问题规模的变量，程序结束时输出其值；通过测试保证程序正确无误，注意递归程序的实现、调试和测试。使用（3）中生成的测试数据（10 个，100 个，1000 个，2000 个，5000个，10000 个，100000 个，……），对于每种规模的测试数据，分别记录以上两个算法执行中各子问题的规模，并用表格方式记录所有情形各子问题的规模值。
 
 ## 实验预期结果与实际结果
-+ 实验预期结果：以n个随机数为例,可以预测实验结果：BubleSort比较次数为n*(n-1)/2次，MergeSort比较次数为
++ **实验预期结果：** 以n个随机数为例,在最坏情况下，可以预测实验结果：BubleSort比较次数为n*(n-1)/2次，MergeSort比较次数为nlogn，而快速排序的比较次数为n*(n-1)/2次。
 
 以下实验过程是以10个随机数为例（100及以上数据过多）
 
-**实验过程及实验结果:**  
++ **实验过程及实验实际结果:**  
 （C版,BubleSort）
 ```bash
 gitpod /workspace/homewrok_template/Experiment_1 (main) $ gcc -o BubleSort.exe BubleSort.c
@@ -93,7 +93,6 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 ```
 由matlab软件画出该三种算法随着数据规模的增加，比较次数的曲线图如下：  
 *三种算法的比较曲线：*  
-![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_1.png)
-
+![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_1.png)  
 *MergeSort与QuickSort之间的比较：*  
 ![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_2.png)  
