@@ -99,8 +99,8 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 ![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_1.png)  
 *MergeSort与QuickSort之间的比较：*  
 ![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_2.png)  
-MergeSort与QuickSort的子问题规模变化如下表所示：
+MergeSort与QuickSort的子问题规模变化如下表所示：  
 排序|10|100|1000|2000|5000|10000|100000
--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+-|:-:|:-:|:-:|:-:|:-:|:-:|:-:
 MergeSort|9|99|999|1999|4999|9999|99999
 QuickSort|6|68|675|1360|3387|6754|67761
