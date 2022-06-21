@@ -96,9 +96,9 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 ```
 由matlab软件画出该三种算法随着数据规模的增加，比较次数的曲线图如下：  
 *三种算法的比较曲线：*  
-![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_1.png)  
+![](/Experiment_1/img/exp1_1.png)  
 *MergeSort与QuickSort之间的比较：*  
-![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_2.png)  
+![](/Experiment_1/img/exp1_2.png)  
 MergeSort与QuickSort的子问题规模变化如下表所示：  
 排序|10|100|1000|2000|5000|10000|100000
 -|:-:|:-:|:-:|:-:|:-:|:-:|:-:
