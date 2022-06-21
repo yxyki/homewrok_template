@@ -4,6 +4,7 @@
 #include<math.h>
 
 int length,count=0;
+int scale=0;
 
 void LineModRandom(int range,int n,int random[]){
     int i;
@@ -24,6 +25,7 @@ int PivotList(int List[],int first,int last){
     int PivotValue=List[first];
     int PivotPoint=first;
     int i,temp;
+    scale++;
     for(i=first+1;i<=last;i++){
         count++;
         if(List[i]<PivotValue){
@@ -62,4 +64,5 @@ int main(){
     for(i=0;i<length;i++)
       printf("%d ",x[i]);
     printf("\n规模为%d的序列的比较次数为:%d\n",length,count);
+    printf("子问题规模为%d\n",scale);
 }

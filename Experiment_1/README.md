@@ -61,6 +61,7 @@ DivideAndConquer(data,n,solution)
 以下实验过程是以10个随机数为例（100及以上数据过多）
 
 + **实验过程及实验实际结果:**  
+
 （C版,BubleSort）
 ```bash
 gitpod /workspace/homewrok_template/Experiment_1 (main) $ gcc -o BubleSort.exe BubleSort.c
@@ -80,6 +81,7 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./MergeSort.exe
 生成的随机序列为:83 38 62 18 74 97 21 11 90 10 
 排序之后为:10 11 18 21 38 62 74 83 90 97 
 规模为10的序列的比较次数为:23
+子问题规模为9
 ```
 （C版，QuickSort）
 ```bash
@@ -90,9 +92,15 @@ gitpod /workspace/homewrok_template/Experiment_1 (main) $ ./QuickSort.exe
 生成的随机序列为:33 5 18 48 37 29 35 3 35 2 
 排序之后为:2 3 5 18 29 33 35 35 37 48 
 规模为10的序列的比较次数为:22
+子问题规模为6
 ```
 由matlab软件画出该三种算法随着数据规模的增加，比较次数的曲线图如下：  
 *三种算法的比较曲线：*  
 ![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_1.png)  
 *MergeSort与QuickSort之间的比较：*  
 ![](https://github.com/yxyki/homewrok_template/raw/main/Experiment_1/img/exp1_2.png)  
+MergeSort与QuickSort的子问题规模变化如下表所示：
+排序|10|100|1000|2000|5000|10000|100000
+-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+MergeSort|9|99|999|1999|4999|9999|99999
+QuickSort|6|68|675|1360|3387|6754|67761

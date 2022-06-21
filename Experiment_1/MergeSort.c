@@ -3,6 +3,7 @@
 #include<time.h>
 
 int length,count=0;
+int scale=0;
 
 void LineModRandom(int range,int n,int random[]){
     int i;
@@ -15,6 +16,7 @@ void LineModRandom(int range,int n,int random[]){
 void MergeList(int List[],int start1,int end1,int start2,int end2){
   int sorted[length];
   int index=0,i;
+  scale++;
   int finalstart=start1,finalend=end2;
   while(start1<=end1&&start2<=end2){
       if(List[start1]<List[start2]){
@@ -74,4 +76,5 @@ int main(){
     for(i=0;i<length;i++)
       printf("%d ",x[i]);
     printf("\n规模为%d的序列的比较次数为:%d\n",length,count);
+    printf("子问题规模为%d\n",scale);
 }
