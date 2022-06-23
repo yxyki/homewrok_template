@@ -49,7 +49,7 @@ return m[n,C]
 (3) 与理论上的时间复杂度结论进行对比分析，完成实验报告。  
 
 **代码链接**  
-[Knapsack.c(0-1背包问题)](/Experiment_2/KnapSack.c)
+[Knapsack.c(0-1背包问题)](https://github.com/yxyki/homewrok_template/blob/main/Experiment_2/KnapSack.c)
 
 ## 实验预期结果与实际结果
 + **实验预期结果** :总共有n个物品，背包容量为C，可以得出该算法的时间复杂度为*O(nC)*.
