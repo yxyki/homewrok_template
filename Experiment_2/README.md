@@ -194,8 +194,7 @@ DP_f(n)
 
 ## 实验输入数据集
 
-文本数据集：5,1,2,3,7,14,6  
-文件数据集：[数据集](./data/list.txt)
+不同的n值:5,10,15,20,25,30  
 
 ## 实验内容
 
@@ -206,29 +205,42 @@ DP_f(n)
 (3) 与两个算法时间复杂度的理论结论进行对比分析，总结分治与动态规划算法的适用条件和特点，完成实验报告。  
 
 ## 实验预期结果与实际结果
-+ 实验预期结果：14
++ 实验预期结果：使用分治法计算斐波那契数列时，时间复杂度为指数级别，而使用动态规划计算，时间复杂度为线性级别*O(n)*。
 
-实验过程及实验结果（Java版）
+**实验过程及实验结果**  
 
+（C版,n=10）
 ```bash
-gitpod /workspace/homewrok_template (main) $ javac Max.java
-Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
-gitpod /workspace/homewrok_template (main) $ java Max
-Picked up JAVA_TOOL_OPTIONS:  -Xmx3435m
-14
+gitpod /workspace/homewrok_template/Experiment_2 (main) $ ./Fibonacci.exe
+请输入n的值:5
+分治法:n=5时,结果为:5
+加法次数为:4
+动态规划法:n=5时,结果为:5
+加法次数为:3
 ```
 
-实验过程及实验结果（C版）
-
+（C版,n=20）  
 ```bash
-gitpod /workspace/homewrok_template (main) $ gcc -o max.exe max.c
-gitpod /workspace/homewrok_template (main) $ ./max.exe 
-14
+gitpod /workspace/homewrok_template/Experiment_2 (main) $ ./Fibonacci.exe
+请输入n的值:20
+分治法:n=20时,结果为:6765
+加法次数为:6764
+动态规划法:n=20时,结果为:6765
+加法次数为:18
 ```
 
-实验过程及实验结果（Python版）
-
+（C版,n=30）  
 ```bash
-gitpod /workspace/homewrok_template (main) $ python max.py 
-14
-```
+gitpod /workspace/homewrok_template/Experiment_2 (main) $ ./Fibonacci.exe
+请输入n的值:30
+分治法:n=30时,结果为:832040
+加法次数为:832039
+动态规划法:n=30时,结果为:832040
+加法次数为:28
+```  
+由实验结果，根据matlab软件，画出的加法次数对比曲线图如下所示：  
+![](/Experiment_2/img/exp2_2.png)  
+动态规划算法的加法次数如下：  
+![](/Experiment_2/img/exp2_3.png)  
+
+由图可知，使用分治法的加法次数接近于指数级别，而使用动态规划则是线性级别，与理论数据保持一致。本次实验的斐波那契数列每个子问题都不是独立的，有重叠部分，由此可以说明分治法适用于子问题不重叠的问题，当子问题重叠时，递归调用会使用很多次，导致操作次数过多，从而时间复杂度也过高。而动态规划针对重叠子问题有着很好的性能，能大大降低时间复杂度。
