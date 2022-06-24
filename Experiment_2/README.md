@@ -173,7 +173,7 @@ f(n)=\left\{\begin{matrix}
    f(n-1)+f(n-2)&n\geq3 
 \end{matrix}\right.
 $$  
-![2](http://latex.codecogs.com/svg.latex?f(n)={\begin{cases}1&n=1,2\\\\f(n-1)+f(n-2)&n\geq3\\\\\end{cases})
+$$![2](http://latex.codecogs.com/svg.latex?f(n)={\begin{cases}1&n=1,2\\\\f(n-1)+f(n-2)&n\geq3\\\\\end{cases})
 
 直观地，斐波纳契数列可递归地得到，算法如下：  
 ```C
