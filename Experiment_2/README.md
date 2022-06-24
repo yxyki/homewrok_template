@@ -151,7 +151,7 @@ gitpod /workspace/homewrok_template/Experiment_2 (main) $ ./Knapsack.exe
 
 + 由曲线图可知，实际运行结果大致为一条直线，与理论的时间复杂度*O(nC)* 基本一致。而通过本次实验，让我对动态规划算法进一步地加深了认识。  
 
-## *$\color{#0099ff}{实验 2.2 动态规划算法的适应性测试}$*  
+## $\color{#0099ff}{实验 2.2 动态规划算法的适应性测试}$  
 
 ## 实验目的：
 
