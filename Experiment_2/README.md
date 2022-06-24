@@ -167,13 +167,7 @@ gitpod /workspace/homewrok_template/Experiment_2 (main) $ ./Knapsack.exe
 * **测试算法**  
 
 斐波纳契数列在现代物理、准晶体结构、化学等领域都有直接的应用。斐波那契数列指的是这样一个数列：1、1、2、3、5、8、13、21、……，这个数列从第三项开始，每一项都等于前两项之和，即：  
-$$
-f(n)=\left\{\begin{matrix}
-   1&n=1,2  \\
-   f(n-1)+f(n-2)&n\geq3 
-\end{matrix}\right.
-$$  
-$$![2](http://latex.codecogs.com/svg.latex?f(n)={\begin{cases}1&n=1,2\\\\f(n-1)+f(n-2)&n\geq3\\\\\end{cases})
+![2](http://latex.codecogs.com/svg.latex?f(n)={\begin{cases}1&n=1,2\\\\f(n-1)+f(n-2)&n\geq3\\\\\end{cases})  
 
 直观地，斐波纳契数列可递归地得到，算法如下：  
 ```C
